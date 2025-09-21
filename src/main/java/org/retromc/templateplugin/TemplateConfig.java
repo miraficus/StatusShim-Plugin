@@ -52,6 +52,10 @@ public class TemplateConfig extends Configuration {
 
         generateConfigOption("settings.welcome-message.value", "Welcome to the server, %player%!");
         generateConfigOption("settings.welcome-message.info", "The message sent to players when join the server."); // Informational comment
+
+        generateConfigOption("settings.ping-response.motd", "Back2Beta Server");
+        generateConfigOption("settings.ping-response.enabled", true);
+
     }
 
     private void convertToNewConfig() {

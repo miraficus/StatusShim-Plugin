@@ -37,6 +37,11 @@ public class TemplatePlugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(listener, this);
 
         log.info("[" + pluginName + "] Is Loaded, Version: " + pdf.getVersion());
+
+        new LegacyPingListener(this);
+
+        new ReflectivePingInterceptor(this);
+
     }
 
     @Override
